@@ -39,7 +39,7 @@ or you can use jest `setupTestFrameworkScriptFile` option in package.json,then a
 ```json
 {
     "jest": {
-    "setupTestFrameworkScriptFile": "./node_modules/jest-async-test-tool"
+    "setupTestFrameworkScriptFile": "jest-async-test-tool"
     }
 }
 ```

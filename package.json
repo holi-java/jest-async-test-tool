@@ -1,6 +1,6 @@
 {
   "name": "jest-async-test-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a tool for async test within setTimeout/setInterval without try-catch to fail the blocked test.",
   "main": "src/jest-async-test-tool.js",
   "repository": {

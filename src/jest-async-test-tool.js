@@ -34,7 +34,7 @@ function runAsyncTestSafely(currentTest) {
     };
 }
 
-export function wrapTest(nativeTest) {
+function wrapTest(nativeTest) {
     return function (name, currentTest) {
         if (!currentTest.length) return nativeTest(name, currentTest);
         return nativeTest(name, runAsyncTestSafely(currentTest));
@@ -42,4 +42,4 @@ export function wrapTest(nativeTest) {
 }
 
 
-export default  top.it = top.test = wrapTest(top.test);
+(module.exports = top.it = top.test = wrapTest(top.test)).wrapTest = wrapTest;

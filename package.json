@@ -1,0 +1,36 @@
+{
+  "name": "jest-async-test-tool",
+  "version": "1.0.1",
+  "description": "a tool for async test within setTimeout/setInterval without try-catch to fail the blocked test.",
+  "main": "src/jest-async-test-tool.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holi-java/jest-async-test-tool"
+  },
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "dependencies": {
+    "jest": "^19.0.1"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/jest-async-test-tool"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "jest",
+    "test",
+    "async test"
+  ],
+  "author": "holi-java",
+  "license": "ISC"
+}
